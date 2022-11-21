@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elementos Compuestos</title>
+</head>
+
+<body>
+  <h1>Explicacion de elementos compuestos en LaunchX</h1>
+
+  <!-- Label / Etiquetas -->
+<label for="Input1">Ejemplo de Input de Texto</label><br>
+
+<!-- Entradas / Inputs -->
+<input type="text" id="Input1" name="Input1" value="Hola Crack">
+<br><br>
+
+<hr>
+
+<!-- Tipos de Inputs -->
+
+<h2>Inputs de Texto</h2>
+<label for="correo1">Input de Correo</label><br>
+<input type="email" id="correo1" name="correo1" placeholder="email"><br><br>
+
+<label for="numero1">Input de Nunmero</label><br>
+<input type="number" id="numero1" name="numero1" placeholder="number"><br><br>
+
+<label for="psw1">Input de Password</label><br>
+<input type="password" id="psw1" name="psw1"><br><br>
+
+<label for="tel1">Input de Telefono</label><br>
+<input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+
+<label for="url1">Input de URL</label><br>
+<input type="url" id="url1" name="url1"><br><br>
+
+<hr>
+
+<h2>Input de Seleccion multiple</h2>
+
+<input type="checkbox" id="topping1" name="topping1" value="Fresa">
+<label for="topping1">Helado de Fresa</label><br>
+<input type="checkbox" id="topping2" name="topping2" value="Chocolate">
+<label for="topping2">Helado de Chocolate</label><br>
+<input type="checkbox" id="topping3" name="topping3" value="Nuez">
+<label for="topping2">Helado de Nuez</label><br>
+<input type="checkbox" id="topping4" name="topping4" value="Reboltura">
+<label for="topping2">Helado de Reboltura</label><br>
+
+<hr>
+
+<h2>Input de Seleccion Unica</h2>
+<h3>Chamoy</h3>
+<input type="radio" id="que pique mucho" name="salsa" value="que pique mucho">
+<label for="que pique mucho">Que pique mucho</label><br>
+<input type="radio" id="que pique mas o menos" name="salsa" value="que pique mas o menos">
+<label for="que pique mas o menos">Que pique mas o menos</label><br>
+<input type="radio" id="que pique poquito" name="salsa" value="que pique poquito">
+<label for="que pique poquito">Que pique poquito</label><br>
+
+<hr>
+
+<h2>Select</h2>
+<label for="helados">Que helado quieres?</label>
+<select name="helados" id="helados">
+  <option value=""></option>
+  <option value="chocolate">Chocolate</option>
+  <option value="fresa">Fresa</option>
+  <option value="nuez">Nuez</option>
+  <option value="reboltura">Reboltura</option>
+  <option value="de este no hay">De este no hay</option>
+</select>
+
+<hr>
+
+<h2>Select con Input</h2>
+<label for="utencilios">Elije con que comeras el helado:</label>
+<input list="utencilios">
+<datalist id="utencilios">
+    <option value="Cuchara">
+    <option value="Tenedor">
+    <option value="Popote">
+    <option value="Con el dedo">
+    <option value="A mordidas">
+    <option value="A lebguetazos">
+</datalist>
+<br><br>
+
+<hr>
+
+<h2>Input de Fecha</h2>
+<input type="date" id="fecha1" name="fecha1"><br>
+<input type="datetime-local" id="fecha2" name="fecha2"><br>
+<input type="week" id="fecha3" name="fecha3"><br>
+<input type="time" id="fecha4" name="fecha4"><br>
+<input type="month" id="fecha5" name="fecha5"><br><br>
+
+<hr>
+
+<h2>Input de Archivo</h2>
+<input type="file" id="archivo1" name="archivo1" multiple size="1000mb" accept=".jpg"><br><br>
+
+<hr>
+
+<h2>Input de Color</h2>
+<input type="color" id="color1" name="color1"> <br><br>
+
+<hr>
+
+<h2>Input de Rango</h2>
+<label for="vol">Volumen (entre 0 y 100)</label>
+<input type="range" id="vol" name="vol" min="0" max="100" value="10">
+
+<hr>
+
+<h2>Inputs de Boton</h2>
+<input type="reset"><br><br>
+<input type="submit"><br><br>
+<input type="button" id="boton1" name="boton1" value="Boton 1" onclick="alert('Hola PAPUCHO!!!!');">
+<button>Boton 2</button>
+<br>
+
+<hr>
+
+<!-- Formularios -->
+<h2>Ejemplo de Formulario</h2>
+<form action="/accion.js" id="form1" method="post">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre"> <br><br>
+  <input type="submit" value="Entrar">
+  <input type="reset" value="Reset">
+</form>
+<br>
+<label for="apellido">Apellido:</label>
+<input type="text" id="apellido" name="apellido" form="form1">
+
+</body>
+</html>

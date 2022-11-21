@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layoutt y Rutas</title>
+  <style>
+  * {
+    box-sizing: border-box;   
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Estilo de header */
+  header {
+    background-color: #18102e;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    }
+
+    /* Crear dos columnas en la misma posicion ene la fila */
+nav {
+  float: left;
+  width: 10%;
+  height: 450px;
+  background: #ccc;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 90%;
+  background-color: #f1f1f1;
+  height:450px;
+}
+
+/* Clean floats after the colums */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Estilos de Footer */
+footer {
+  background-color: #18102e;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Resposive Layout */
+@media (max-width: 600px) {
+
+    nav,
+    article {
+      width: 100px;
+      height: auto;
+    }
+}
+  </style>
+
+</head>
+<body>
+
+
+  <header>
+    <h2>Ciudad</h2>
+    <h6>Lo mas lindo de este planeta planetario</h6>
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <li><a href="https://mega.nz/file/HU4xHCZa#akBUZXwZz2-MfQKMezE1sYWzlyBYAKRmePB0OHijNaw" target="_blank">Japon</a></li><br>
+        <li><a href="https://mega.nz/file/KUoQUKAR#_ouNYiO4gclKKm2hm3oVjAjZ6mIStL1-JFpt5pPXZHo" target="_blank">Tokyo</a></li><br>
+        <li><a href="https://mega.nz/file/LIQCwATL#LPxAmUz_9VeOj12g3jm5hP4Adgj_8vnvUP65EpP3cSc" target="_blank">Konoha</a></li><br>
+      </ul>
+    </nav>
+
+    <article>
+      <h1>Ciudad Z</h1>
+      <P>La Ciudad Z (Z市, Z Shi). Consiste en un distrito de negocios, un distrito residencial y una zona abandonada (pueblo fantasma) la cual está destrozada y deshabitada en casi su totalidad.</P>
+      <img src="https://jutsume.com/images/2021/05/15/saitama-one-punch-man-city.jpg" alt="Japon" width="350" height="300">
+      </article>
+  </section>
+   <footer>
+    <p>Footer</p>
+  </footer>
+
+
+</body>
+</html>
